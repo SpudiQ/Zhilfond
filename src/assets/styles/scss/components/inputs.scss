@@ -1,0 +1,16 @@
+.input {
+    &__plain {
+        padding: 16px 24px;
+        height: 52px; // default
+
+        border-radius: 8px;
+        border: 1.5px solid $grey-color-200;
+        background: $white;
+
+        outline: none;
+
+        font-size: 14px;
+        color: $very-dark-grey-color;
+        font-family: "Montserrat", sans-serif;
+    }
+}

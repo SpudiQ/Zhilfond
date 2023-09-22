@@ -1,0 +1,24 @@
+.header {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; // хотя его здесь и не должно быть, но считаю, что это косяк макета
+
+        margin-bottom: 30px; // можно было бы повесить целый контейнер на layout и сделать gap через флекс
+    }
+
+    &__logo {
+        color: $red-color;
+        line-height: $h1-line-height;
+    }
+
+    &__user {
+        font-weight: 400;
+        line-height: $h4-line-height;
+    }
+
+    &__logo,
+    &__user {
+        cursor: pointer;
+    }
+}

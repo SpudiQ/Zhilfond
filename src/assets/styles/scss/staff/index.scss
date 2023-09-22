@@ -1,0 +1,107 @@
+.staff {
+    &__container {
+        display: grid;
+        grid-template-columns: 3fr 9fr;
+
+        width: 100%;
+        height: 85vh;
+
+        border-radius: 10px;
+        background: #FDFDFD;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    &__sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        padding: 30px;
+        border-right: 1px solid $dark-grey-color;
+
+        overflow: hidden;
+    }
+
+    &__view {
+        display: grid;
+        
+        &__container {
+            padding: 30px;
+
+            display: grid;
+            grid-template-areas: "img info";
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        &__img {
+            height: 100%;
+            width: 100%;
+
+            img {
+                width: 100%;
+                aspect-ratio: auto;
+            }
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            p {
+                color: #76787D;
+
+                span {
+                    color: #000;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        &__placeholder {
+            grid-template-areas: img, info;
+        }
+    }
+
+    &__list {
+        &__container,
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__wrapper {
+            max-height: 55vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+
+            padding: 10px 5px;
+        }
+    }
+
+    &__card {
+        &__wrapper {
+            display: flex;
+
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+
+            cursor: pointer;
+        }
+
+        &__img {
+            padding: 23px 25px;
+            border-right: 1px solid #E0E0E0;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            padding: 15px;
+        }
+    }
+}
